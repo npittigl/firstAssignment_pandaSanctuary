@@ -1,0 +1,96 @@
+
+// stripping styles
+body,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+button,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+// add img too??
+span {
+    display: block;
+}
+
+// general styles
+html {
+    font-size: 125%;
+    font-family: 'Barlow', sans-serif;
+}
+
+h2,
+h3,
+h4,
+.logo,
+.btn,
+.btn3,
+.footerNav {
+    font-family: 'Offside', cursive;
+}
+
+body {
+    color: #fff;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    font-size: 0.9rem;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// flex box
+.flexContainer {
+    display: flex;
+}
+
+.nav,
+.mainTitle {
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+// button styles
+.btn {
+    background-color: #116500;
+    border: 2px solid transparent;
+    color: #fff;
+    cursor: pointer;
+    a {
+        padding: 8px 15px;
+    }
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #fff;
+    border: 2px solid #116500;
+    color: #116500;
+}

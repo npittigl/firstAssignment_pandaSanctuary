@@ -1,0 +1,52 @@
+// gallery styles
+.galleryAndAbout {
+    background-color: #d6f1e4;
+    color: #2c2d2c;
+    padding-top: 80px;
+    h2 {
+        color: #116500;
+    }
+}
+
+.gallery {
+    padding-bottom: 45px;
+    h2 {
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    ul {
+        .picOne,
+        .picTwo {
+            margin-right: 1%;
+        }
+        .picTwo,
+        .picThree {
+            margin-left: 1%;
+        }
+        .picOne,
+        .picThree {
+            width: calc((100% / 3) - 1%);
+        }
+        .picTwo {
+            width: calc((100% / 3) - 1%)
+        }
+    }
+}
+
+// aboutText styles
+.about {
+    padding: 45px 0 80px;
+    .imgContainer {
+        width: calc(25% - 2%);
+        margin-right: 2%;
+    }
+    .textContainer {
+        width: calc(75% - 2%);
+        margin-left: 2%;
+        p {
+            margin: 20px 0px;
+        }
+    }
+}
+
+

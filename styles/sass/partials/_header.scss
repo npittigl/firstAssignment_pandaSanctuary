@@ -1,0 +1,28 @@
+header {
+    min-height: 100vh;
+    padding-top: 20px;
+    background: url(../assets/header-image.png);
+    background-position: center;
+    background-size: cover;
+    color:#fff;
+    .mainTitle {
+        margin-top: 50px;
+        h1 {
+            font-size: 2.8rem;
+            line-height: 55px;
+            letter-spacing: 0.8px;
+        }
+    }
+}
+
+aside {
+    position: fixed;
+    top: 120px;
+    right: 30px;
+    a {
+        padding-bottom: 8px;
+    }
+    i.fa-facebook-f {
+        padding: 0 3px;
+    }
+}

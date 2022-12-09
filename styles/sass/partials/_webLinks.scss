@@ -1,0 +1,18 @@
+.webLinks {
+    background-color: #d6f1e4;
+    color: #2c2d2c;
+    ul {
+        // flex basis??
+        justify-content: center;
+        align-items: center;
+        li {
+            text-align: center;
+            margin: 80px 110px;
+            h3 {
+                color: #116500;
+                margin-top: 12px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

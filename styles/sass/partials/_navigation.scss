@@ -1,0 +1,24 @@
+.nav {
+    .logo {
+        line-height: 18px;
+    }
+    ul {
+        font-weight: 700;
+        text-shadow: 3px 3px 2px #000;
+        li {
+            a {
+                padding-bottom: 8px;
+                border-bottom: 2px solid transparent;
+
+                &:hover,
+                &:focus {
+                    border-bottom: 2px solid #fff;
+                }    
+            }
+            &:not(.lastItem) {
+                margin-right: 40px;
+            }
+        }   
+    }
+}
+
