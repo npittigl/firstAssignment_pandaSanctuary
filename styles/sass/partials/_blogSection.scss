@@ -1,5 +1,6 @@
+@use './variables' as *;
 .blog {
-    background: #213c28;
+    background: $primaryColor;
     .blogText,
     .blogImage {
         width: calc(100% / 2);
@@ -15,7 +16,7 @@
     }
     .btn2 {
         background-color: #fff;
-        color: #213c28;
+        color: $primaryColor;
     }
     .btn2:hover,
     .btn2:focus {

@@ -69,6 +69,11 @@ footer {
         }
         a {
             width: 100%;
+
+            &:hover,
+            &:focus {
+                color: #116500;
+            }
         }
     }
 }

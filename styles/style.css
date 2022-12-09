@@ -358,7 +358,7 @@ span {
 
 html {
   font-size: 125%;
-  font-family: "Barlow", sans-serif;
+  font-family: "Barlow";
 }
 
 h2,
@@ -634,6 +634,9 @@ footer .copyright {
 }
 .footerNav li a {
   width: 100%;
+}
+.footerNav li a:hover, .footerNav li a:focus {
+  color: #116500;
 }
 
 /* Portrait tablet and small desktops */

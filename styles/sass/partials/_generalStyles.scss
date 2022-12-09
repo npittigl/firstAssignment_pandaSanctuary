@@ -1,4 +1,4 @@
-
+@use './variables' as *;
 // stripping styles
 body,
 p,
@@ -31,7 +31,8 @@ span {
 // general styles
 html {
     font-size: 125%;
-    font-family: 'Barlow', sans-serif;
+    // font-family: 'Barlow', sans-serif;
+    font-family: $bodyFont;
 }
 
 h2,
@@ -51,6 +52,7 @@ body {
     font-size: 0.9rem;
 }
 
+// wrapper
 .wrapper {
     max-width: 1200px;
     width: 85%;
