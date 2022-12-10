@@ -1,28 +1,36 @@
+
+@use './variables' as *;
+
+// general header styles 
 header {
     min-height: 100vh;
     padding-top: 20px;
     background: url(../assets/header-image.png);
     background-position: center;
     background-size: cover;
-    color:#fff;
-    .mainTitle {
+    color: $white;
+    h1 {
         margin-top: 50px;
-        h1 {
-            font-size: 2.8rem;
-            line-height: 55px;
-            letter-spacing: 0.8px;
-        }
+        font-size: 2.8rem;
+        line-height: 55px;
+        letter-spacing: 0.8px;
     }
 }
 
-aside {
+// mediaLinks styles
+.mediaLinks {
     position: fixed;
     top: 120px;
     right: 30px;
     a {
         padding-bottom: 8px;
-    }
-    i.fa-facebook-f {
-        padding: 0 3px;
-    }
+
+        &:hover,
+        &:focus {
+            color: $accentColor;
+        }
+        i.fa-facebook-f {
+            padding: 0 3px;
+        }
+    }    
 }

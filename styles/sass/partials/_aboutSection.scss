@@ -1,13 +1,17 @@
-// gallery styles
+
+@use './variables' as *;
+
+// gallery and about section general styles
 .galleryAndAbout {
-    background-color: #d6f1e4;
-    color: #2c2d2c;
+    background-color: $secondaryColor;
+    color: $black;
     padding-top: 80px;
     h2 {
-        color: #116500;
+        color: $accentColor;
     }
 }
 
+// gallery styles
 .gallery {
     padding-bottom: 45px;
     h2 {

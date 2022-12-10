@@ -358,7 +358,7 @@ span {
 
 html {
   font-size: 125%;
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
 }
 
 h2,
@@ -368,7 +368,7 @@ h4,
 .btn,
 .btn3,
 .footerNav {
-  font-family: "Offside", cursive;
+  font-family: "Offside", curseive;
 }
 
 body {
@@ -397,8 +397,7 @@ img {
   display: flex;
 }
 
-.nav,
-.mainTitle {
+.nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -428,6 +427,10 @@ h2 {
 .nav .logo {
   line-height: 18px;
 }
+.nav .logo a:hover,
+.nav .logo a:focus {
+  color: #116500;
+}
 .nav ul {
   font-weight: 700;
   text-shadow: 3px 3px 2px #000;
@@ -451,24 +454,25 @@ header {
   background-size: cover;
   color: #fff;
 }
-header .mainTitle {
+header h1 {
   margin-top: 50px;
-}
-header .mainTitle h1 {
   font-size: 2.8rem;
   line-height: 55px;
   letter-spacing: 0.8px;
 }
 
-aside {
+.mediaLinks {
   position: fixed;
   top: 120px;
   right: 30px;
 }
-aside a {
+.mediaLinks a {
   padding-bottom: 8px;
 }
-aside i.fa-facebook-f {
+.mediaLinks a:hover, .mediaLinks a:focus {
+  color: #116500;
+}
+.mediaLinks a i.fa-facebook-f {
   padding: 0 3px;
 }
 

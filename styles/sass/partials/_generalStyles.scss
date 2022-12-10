@@ -1,4 +1,6 @@
+
 @use './variables' as *;
+
 // stripping styles
 body,
 p,
@@ -31,7 +33,6 @@ span {
 // general styles
 html {
     font-size: 125%;
-    // font-family: 'Barlow', sans-serif;
     font-family: $bodyFont;
 }
 
@@ -42,11 +43,11 @@ h4,
 .btn,
 .btn3,
 .footerNav {
-    font-family: 'Offside', cursive;
+    font-family: $styleFont;
 }
 
 body {
-    color: #fff;
+    color: $white;
     line-height: 26px;
     letter-spacing: 0.2px;
     font-size: 0.9rem;
@@ -70,8 +71,7 @@ img {
     display: flex;
 }
 
-.nav,
-.mainTitle {
+.nav {
     justify-content: space-between;
 }
 
@@ -81,9 +81,9 @@ h2 {
 
 // button styles
 .btn {
-    background-color: #116500;
+    background-color: $accentColor;
     border: 2px solid transparent;
-    color: #fff;
+    color: $white;
     cursor: pointer;
     a {
         padding: 8px 15px;
@@ -92,7 +92,7 @@ h2 {
 
 .btn:hover,
 .btn:focus {
-    background-color: #fff;
-    border: 2px solid #116500;
-    color: #116500;
+    background-color: $white;
+    border: 2px solid $accentColor;
+    color: $accentColor;
 }

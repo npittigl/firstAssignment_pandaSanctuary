@@ -1,6 +1,14 @@
+
+@use './variables' as *;
+
+// header navigation bar styles
 .nav {
     .logo {
         line-height: 18px;
+        a:hover,
+        a:focus {
+            color: $accentColor;
+        }
     }
     ul {
         font-weight: 700;
@@ -12,7 +20,7 @@
 
                 &:hover,
                 &:focus {
-                    border-bottom: 2px solid #fff;
+                    border-bottom: 2px solid $white;
                 }    
             }
             &:not(.lastItem) {
