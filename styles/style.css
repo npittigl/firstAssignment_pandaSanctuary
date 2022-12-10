@@ -336,6 +336,8 @@ li,
 h1,
 h2,
 h3,
+h4,
+h5,
 button,
 img {
   margin: 0;
@@ -361,9 +363,9 @@ html {
   font-family: "Barlow", sans-serif;
 }
 
-h2,
 h3,
 h4,
+h5,
 .logo,
 .btn,
 .btn3,
@@ -403,7 +405,7 @@ img {
           justify-content: space-between;
 }
 
-h2 {
+h3 {
   font-size: 1.8rem;
 }
 
@@ -454,7 +456,7 @@ header {
   background-size: cover;
   color: #fff;
 }
-header h1 {
+header h2 {
   margin-top: 50px;
   font-size: 2.8rem;
   line-height: 55px;
@@ -481,14 +483,14 @@ header h1 {
   color: #2c2d2c;
   padding-top: 80px;
 }
-.galleryAndAbout h2 {
+.galleryAndAbout h3 {
   color: #116500;
 }
 
 .gallery {
   padding-bottom: 45px;
 }
-.gallery h2 {
+.gallery h3 {
   text-align: center;
   padding-bottom: 70px;
 }
@@ -566,7 +568,7 @@ header h1 {
   text-align: center;
   margin: 80px 110px;
 }
-.webLinks ul li h3 {
+.webLinks ul li h4 {
   color: #116500;
   margin-top: 12px;
   font-size: 1.2rem;
@@ -576,7 +578,7 @@ footer {
   background-color: #213c28;
   padding-top: 80px;
 }
-footer h4 {
+footer h5 {
   font-size: 1rem;
 }
 footer .wrapper {
@@ -625,7 +627,7 @@ footer .copyright {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contactMenuDiv h4 {
+.contactMenuDiv h5 {
   margin-bottom: 14px;
 }
 
