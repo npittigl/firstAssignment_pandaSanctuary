@@ -4,15 +4,17 @@
 // general header styles 
 header {
     min-height: 100vh;
-    padding-top: 20px;
     background: url(../assets/header-image.png);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: $white;
     h2 {
+        width: 40%;
+        min-width: 220px;
         margin-top: 50px;
-        font-size: 2.8rem;
-        line-height: 55px;
+        font-size: clamp(1.875rem, 1.5236rem + 1.7568vw, 3.5rem);
+        line-height: 2.5rem;
         letter-spacing: 0.8px;
     }
 }

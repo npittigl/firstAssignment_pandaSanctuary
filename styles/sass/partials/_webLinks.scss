@@ -3,14 +3,14 @@
 
 // webLinks section styles
 .webLinks {
-    background-color: $secondaryColor;
+    background: url(../assets/image-5@2x.png);
+    padding: 7.5% 0;
     color: $black;
     ul {
         justify-content: center;
-        align-items: center;
         li {
             text-align: center;
-            margin: 80px 110px;
+            width: calc(100% / 3);
             h4 {
                 color: $accentColor;
                 margin-top: 12px;

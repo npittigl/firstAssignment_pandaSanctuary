@@ -32,6 +32,12 @@ span {
     display: block;
 }
 
+// hide hamburger icon in nav
+.nav label,
+input[type="checkbox"] {
+    display: none;
+}
+
 // general styles
 html {
     font-size: 125%;
@@ -55,17 +61,17 @@ body {
     font-size: 0.9rem;
 }
 
-// wrapper
-.wrapper {
-    max-width: 1200px;
-    width: 85%;
-    margin: 0 auto;
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+// wrapper
+.wrapper {
+    max-width: 1800px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 // flex box

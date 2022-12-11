@@ -43,6 +43,10 @@
     .imgContainer {
         width: calc(25% - 2%);
         margin-right: 2%;
+
+        img {
+            height: 100%;
+        }
     }
     .textContainer {
         width: calc(75% - 2%);

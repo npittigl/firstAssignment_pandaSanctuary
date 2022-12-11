@@ -2,15 +2,96 @@
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+    /* wrapper  */
+    .wrapper {
+        width: 90%;
+    }
+
 
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
+    // **** HEADER **** //
+    header {
+        width: 100%;
+        background-position: center bottom;
+        h2 {
+            line-height: 2rem;
+        }
+    }
+
+    /* nav slide-out menu */
+    i.fa-bars {
+        font-size: 1.8rem;
+    }
+    
+    ul.slideOutMenu {
+        min-width: 55%;
+        background: rgba(44, 45, 44, 0.8);
+        border: 2px solid $white;
+        border-right-color: transparent;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: fixed;
+        right: -55%;
+        top: 100px;
+        z-index: 10;
+        transition: all 0.6s;
+    }
+
+    ul.slideOutMenu li {
+        width: 100%;
+    }
+    
+    ul.slideOutMenu a {
+        width: inherit;
+        padding: 35px 0;
+        font-size: 2.3rem;
+        text-align: center;
+        
+    }
+    
+    ul.slideOutMenu a:hover,
+    ul.slideOutMenu a:focus {
+        background-color: rgba(17, 101, 0, 0.6);
+        border-bottom-color: transparent;
+    }
+
+    .nav label {
+        display: block;
+    }
+    
+    input[type="checkbox"]:checked + ul.slideOutMenu {
+        right: 0px;
+    }
+
+    label[for="toggle"] {
+        position: fixed;
+        right: 5%;
+        z-index: 10;
+    }
+
+    // remove mediaLinks
+    .mediaLinks {
+        display: none;
+    }
+}
+
+// Small Break Point
+@media (max-width: 680px) {
+    
+    header {
+        height: 80vh;
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    
+    header {
+        height: 70vh;
+        
+    }
+        
 }

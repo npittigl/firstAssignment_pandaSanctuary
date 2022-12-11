@@ -3,30 +3,30 @@
 
 // header navigation bar styles
 .nav {
+    padding-top: 20px;
     .logo {
         line-height: 18px;
-        a:hover,
-        a:focus {
+        &:hover,
+        &:focus {
             color: $accentColor;
         }
     }
-    ul {
-        font-weight: 700;
-        text-shadow: 3px 3px 2px #000;
-        li {
-            a {
-                padding-bottom: 8px;
-                border-bottom: 2px solid transparent;
+    li {
+        a {
+            font-weight: 700;
+            text-shadow: 3px 3px 2px #000;
+            padding-bottom: 8%;
+            border: 2px solid transparent;
 
-                &:hover,
-                &:focus {
-                    border-bottom: 2px solid $white;
-                }    
+            &:hover,
+            &:focus {
+                border-bottom: 2px solid $white;    
             }
-            &:not(.lastItem) {
-                margin-right: 40px;
-            }
-        }   
-    }
+        }
+
+        &:not(.lastItem) {
+            margin-right: 40px;
+        }
+    }   
 }
 

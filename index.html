@@ -21,15 +21,15 @@
         <div class="wrapper">
             <!-- navigation container begins -->
             <nav class="nav flexContainer">
-                <!-- logo & link to skip to main content-->
-                <div class="logo">
-                    <a href="#mainContent"><h1>Panda <span>Sanctuary</span></h1></a>
-                </div>
+                <!-- logo/link to homepage -->
+                <a href="./index.html" class="logo"><h1>Panda <span>Sanctuary</span></h1></a>
 
-                <!-- div??? -->
-                <!-- hamburger menu for smaller screen-->
-                <!-- <label for="toggle"><i class="fa fa-bars"></i></label>
-                <input type="checkbox" id="toggle" for="toggle"></i></input> -->
+                <!-- icon for slide out menu on smaller screen -->
+                <label for="toggle">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Click here to open or close main menu</span>
+                </label>
+                <input type="checkbox" id="toggle" name="toggle">
 
                 <!-- horizontal menu for larger screen-->
                 <ul class="slideOutMenu flexContainer">
@@ -41,11 +41,11 @@
             </nav><!-- navigation container ends -->
             
             <!-- second main title -->
-            <h2>A safe and loving <span>place for all</span> pandas</h2>
+            <h2>A safe and loving place for all pandas</h2>
 
             <!-- social media links -->
-            <div class="mediaLinks">
-                <ul>
+            <div>
+                <ul class="mediaLinks">
                     <li><a href="#" aria-label="Go to Panda Sanctuary's Instagram page"><i aria-hidden="true" class="fab fa-instagram fa-lg"></i></a></li>
                     <li><a href="#" aria-label="Go to Panda Sanctuary's Facebook page"><i aria-hidden="true" class="fab fa-facebook-f fa-lg"></i></a></li>
                     <li><a href="#" aria-label="Go to Panda Sanctuary's Snapchat page"><i aria-hidden="true" class="fab fa-snapchat-ghost fa-lg"></i></a></li>
@@ -56,7 +56,7 @@
     </header><!-- header ends -->
 
     <!-- main begins -->
-    <main class="mainContent" id="mainContent">
+    <main>
         <!-- gallery & about section begins -->
         <section class="galleryAndAbout">
             <!-- gallery wrapper begins -->
@@ -82,7 +82,7 @@
                 <div class="textContainer">
                     <h3>More about our park</h3>
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad impedit officia voluptates libero ipsa dolores quibusdam dolorem, nulla optio illo, ab ratione minima odio velit deserunt ullam earum aliquid tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nihil! Temporibus dolore quibusdam, consectetur accusamus voluptate magni dolor deserunt labore, accusantium eum aut sed laboriosam voluptatibus culpa id reprehenderit consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
                     <!-- button -->
                     <button class="btn btn1"><a href="#">READ MORE</a></button>
@@ -107,7 +107,7 @@
 
                 <!-- blog1 image container -->
                 <div class="blogImage">
-                    <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.png" alt="Two baby pandas lying on their stomachs, side by side">
+                    <img src="./assets/image-2@2x.png" alt="Two baby pandas lying on their stomachs, side by side">
                 </div><!-- image container ends-->
             </div><!-- first blog post container ends -->
 
@@ -115,7 +115,7 @@
             <div class="blog2 flexContainer">
                 <!-- blog2 image container -->
                 <div class="blogImage">
-                    <img src="./assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.png" alt="A close up of an adult panda biting into bamboo shoot, baring their teeth">
+                    <img src="./assets/left-image@2x.png" alt="A close up of an adult panda biting into bamboo shoot, baring their teeth">
                 </div>
 
                 <!-- blog2 text -->
@@ -134,20 +134,23 @@
 
         <!-- website links section begins -->
         <section class="webLinks">
-            <ul class="flexContainer">
-                <li>
-                    <a href="#" aria-label="Click here if you'd like to make a donation to the Panda Sanctuary"><i aria-hidden="true" class="fas fa-gift fa-3x"></i></a>
-                    <h4>Donations</h4>
-                </li>
-                <li>
-                    <a href="#" aria-label="Click here for job opportunities"><i aria-hidden="true" class="fas fa-briefcase fa-3x"></i></a>
-                    <h4>Jobs</h4>
-                </li>
-                <li>
-                    <a href="#" aria-label="Click here for upcoming events"><i aria-hidden="true" class="fas fa-calendar-check fa-3x"></i></a>
-                    <h4>Events</h4>
-                </li>
-            </ul>
+            <!-- webLinks wrapper begins -->
+            <div class="wrapper">
+                <ul class="flexContainer">
+                    <li>
+                        <a href="#" aria-label="Click here if you'd like to make a donation to the Panda Sanctuary"><i aria-hidden="true" class="fas fa-gift fa-3x"></i></a>
+                        <h4>Donations</h4>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Click here for job opportunities"><i aria-hidden="true" class="fas fa-briefcase fa-3x"></i></a>
+                        <h4>Jobs</h4>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Click here for upcoming events"><i aria-hidden="true" class="fas fa-calendar-check fa-3x"></i></a>
+                        <h4>Events</h4>
+                    </li>
+                </ul>
+            </div><!-- webLinks wrapper ends -->
         </section><!-- website links ends -->
     </main><!-- main ends -->
 
