@@ -7,19 +7,18 @@
         width: 90%;
     }
 
-
+    // **** HEADER **** //
+    header {
+        background-position: center bottom;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
     // **** HEADER **** //
-    header {
-        width: 100%;
-        background-position: center bottom;
-        h2 {
-            line-height: 2rem;
-        }
+    header h2 {
+        line-height: 2.2rem;
     }
 
     /* nav slide-out menu */
@@ -35,7 +34,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         position: fixed;
-        right: -55%;
+        right: -60%;
         top: 100px;
         z-index: 10;
         transition: all 0.6s;
@@ -81,17 +80,32 @@
 
 // Small Break Point
 @media (max-width: 680px) {
-    
     header {
-        height: 80vh;
+        background: url(../assets/headerMobile3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -120px center;
     }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
     header {
-        height: 70vh;
-        
+        background-position-x: -220px;
+        h2 {
+            line-height: 1.8rem;
+        }
     }
-        
+}
+
+@media (max-width: 320px) {
+    header {
+        height: 80vh;
+        background-position-x: -140px;
+        h2 {
+            font-size: 1.58rem;
+            line-height: 28px;
+            margin-top: 40px;
+        }
+    }
 }

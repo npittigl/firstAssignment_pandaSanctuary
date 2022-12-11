@@ -450,15 +450,12 @@ h3 {
   border-bottom: 2px solid #fff;
 }
 .nav li:not(.lastItem) {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 header {
-  min-height: 100vh;
-  background: url(../assets/header-image.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 100vh;
+  background: url(../assets/header-image.png) no-repeat right center/cover;
   color: #fff;
 }
 header h2 {
@@ -659,15 +656,14 @@ footer .copyright {
   .wrapper {
     width: 90%;
   }
+  header {
+    background-position: center bottom;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  header {
-    width: 100%;
-    background-position: center bottom;
-  }
   header h2 {
-    line-height: 2rem;
+    line-height: 2.2rem;
   }
   /* nav slide-out menu */
   i.fa-bars {
@@ -686,7 +682,7 @@ footer .copyright {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     position: fixed;
-    right: -55%;
+    right: -60%;
     top: 100px;
     z-index: 10;
     -webkit-transition: all 0.6s;
@@ -723,12 +719,29 @@ ul.slideOutMenu a:focus {
 }
 @media (max-width: 680px) {
   header {
-    height: 80vh;
+    background: url(../assets/headerMobile3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -120px center;
   }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
   header {
-    height: 70vh;
+    background-position-x: -220px;
+  }
+  header h2 {
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    height: 80vh;
+    background-position-x: -140px;
+  }
+  header h2 {
+    font-size: 1.58rem;
+    line-height: 28px;
+    margin-top: 40px;
   }
 }
