@@ -8,9 +8,6 @@ footer {
     h5 {
         font-size: 1rem;
     }
-    .wrapper p {
-        font-size: 0.85rem;
-    }
     .copyright {
         font-size: 0.7rem;
         text-align: center;
@@ -22,29 +19,30 @@ footer {
 
 // form styles
 .subscriptionDiv {
-    width: calc(55% - 3%);
-    margin-right: 3%;
+    width: 50%;
     p {
+        font-size: 0.85rem;
         margin: 10px 0 8px;
     }
     form {
         input[type="email"] {
             width: 76%;
-            padding: 10px 25px;
+            height: 45px;
+            padding: 10px 15px;
             font-size: 0.8rem;
             letter-spacing: 0.3px;
         }
         .btn3 {
             width: 24%;
-            border: 1px solid transparent;
             background: $black;
+            border: 2px solid transparent;
             color: $white;
             font-size: 0.85rem;
 
             &:hover,
             &:focus {
-                border: 1px solid $black;
-                background-color: $white;
+                border: 2px solid $black;
+                background: $white;
                 color: $black;
             }
         }
@@ -53,8 +51,11 @@ footer {
 
 // contact info & footer nav styles
 .contactMenuDiv {
-    width: calc(45% - 3%);
+    width: 50%;
     justify-content: space-between;
+    .contact {
+        padding-left: 90px;
+    }
     h5 {
         margin-bottom: 14px;
     }

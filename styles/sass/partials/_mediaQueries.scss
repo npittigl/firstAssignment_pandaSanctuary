@@ -42,11 +42,13 @@
     .subscriptionDiv,
     .contactMenuDiv {
         width: 100%;
-        margin: 0;
     }
 
     .contactMenuDiv {
         margin-top: 60px;
+        .contact {
+            padding-left: 0;
+        }
     }
 }
 
@@ -308,7 +310,7 @@
                 margin-bottom: 12px;
                 text-align: center;
             }
-            button[type="submit"] {
+            .btn3 {
                 width: 35%;
                 padding: 10px 0;
             }
@@ -398,9 +400,13 @@
     }
 
     // *** FOOTER ***//
-    footer {
-        .subscriptionDiv p {
-            font-size: .73rem;
+    .subscriptionDiv p {
+        font-size: .73rem;
+    }
+
+    .subscriptionDiv .emailInput.flexContainer {
+        button[type="submit"] {
+            width: 52%;
         }
     }
 }

@@ -607,9 +607,6 @@ footer {
 footer h5 {
   font-size: 1rem;
 }
-footer .wrapper p {
-  font-size: 0.85rem;
-}
 footer .copyright {
   font-size: 0.7rem;
   text-align: center;
@@ -619,36 +616,40 @@ footer .copyright {
 }
 
 .subscriptionDiv {
-  width: 52%;
-  margin-right: 3%;
+  width: 50%;
 }
 .subscriptionDiv p {
+  font-size: 0.85rem;
   margin: 10px 0 8px;
 }
 .subscriptionDiv form input[type=email] {
   width: 76%;
-  padding: 10px 25px;
+  height: 45px;
+  padding: 10px 15px;
   font-size: 0.8rem;
   letter-spacing: 0.3px;
 }
 .subscriptionDiv form .btn3 {
   width: 24%;
-  border: 1px solid transparent;
   background: #2c2d2c;
+  border: 2px solid transparent;
   color: #fff;
   font-size: 0.85rem;
 }
 .subscriptionDiv form .btn3:hover, .subscriptionDiv form .btn3:focus {
-  border: 1px solid #2c2d2c;
-  background-color: #fff;
+  border: 2px solid #2c2d2c;
+  background: #fff;
   color: #2c2d2c;
 }
 
 .contactMenuDiv {
-  width: 42%;
+  width: 50%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.contactMenuDiv .contact {
+  padding-left: 90px;
 }
 .contactMenuDiv h5 {
   margin-bottom: 14px;
@@ -712,10 +713,12 @@ footer .copyright {
   .subscriptionDiv,
 .contactMenuDiv {
     width: 100%;
-    margin: 0;
   }
   .contactMenuDiv {
     margin-top: 60px;
+  }
+  .contactMenuDiv .contact {
+    padding-left: 0;
   }
 }
 /* Second Big Break Point: Landscape phone to portrait tablet */
@@ -953,7 +956,7 @@ ul.slideOutMenu a:focus {
     margin-bottom: 12px;
     text-align: center;
   }
-  .subscriptionDiv .emailInput.flexContainer button[type=submit] {
+  .subscriptionDiv .emailInput.flexContainer .btn3 {
     width: 35%;
     padding: 10px 0;
   }
@@ -1015,7 +1018,10 @@ ul.slideOutMenu a:focus {
     font-size: 1.2rem;
     padding: 10px 0 0 0;
   }
-  footer .subscriptionDiv p {
+  .subscriptionDiv p {
     font-size: 0.73rem;
+  }
+  .subscriptionDiv .emailInput.flexContainer button[type=submit] {
+    width: 52%;
   }
 }
