@@ -561,10 +561,10 @@ header h2 {
   width: 50%;
 }
 .blog .blog1 .blogText {
-  padding: 30px 35px 35px 95px;
+  padding: 35px 35px 35px 95px;
 }
 .blog .blog2 .blogText {
-  padding: 30px 95px 35px 45px;
+  padding: 35px 95px 35px 45px;
 }
 .blog p {
   margin: 30px 0;
@@ -776,15 +776,16 @@ ul.slideOutMenu a:focus {
   }
   .gallery ul .half {
     width: 48%;
-    margin-bottom: 13%;
   }
   .gallery ul .full {
-    margin: 0;
+    margin: 65px 0 0;
     width: 100%;
   }
   .gallery ul .full img {
     width: 100%;
-    height: 375px;
+    height: 400px;
+    -o-object-fit: fill;
+       object-fit: fill;
   }
   .hide {
     display: none;
@@ -816,7 +817,12 @@ ul.slideOutMenu a:focus {
     height: 280px;
   }
   .blog1 .blogText.wrapper {
-    padding: 60px 0;
+    padding: 80px 0;
+  }
+  .blog1 .blogText.wrapper h3,
+.blog1 .blogText.wrapper .btn2 {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .blog2 {
     width: 100%;
@@ -830,7 +836,12 @@ ul.slideOutMenu a:focus {
     height: 330px;
   }
   .blog2 .blogText.wrapper {
-    padding: 60px 0;
+    padding: 80px 0;
+  }
+  .blog2 .blogText.wrapper h3,
+.blog2 .blogText.wrapper .btn2 {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 @media (max-width: 680px) {
@@ -843,39 +854,63 @@ ul.slideOutMenu a:focus {
 }
 /* Third Big Break Point: Landscape phones and down */
 @media (max-width: 480px) {
-  /* wrapper  */
-  .wrapper {
-    width: 95%;
-  }
   header {
     background-position-x: -220px;
   }
   header h2 {
     line-height: 1.8rem;
   }
-  .about.wrapper {
-    padding-bottom: 80px;
+  .galleryAndAbout .gallery {
+    padding-bottom: 20px;
+  }
+  .galleryAndAbout .gallery .full img {
+    height: 320px;
   }
   .about .textContainer p {
-    padding-right: 15px;
-    padding-bottom: 30px;
-    letter-spacing: 0.3;
-    line-height: 28px;
+    padding: 10px 0 30px;
   }
   .about .textContainer .btn1 {
-    font-size: 1rem;
     letter-spacing: 0.3;
     -ms-flex-item-align: center;
         align-self: center;
   }
   .about .textContainer .btn1 a {
-    padding: 20px 35px;
+    padding: 17px 27px;
   }
   .blog1 .blogImage img {
     height: 165px;
   }
+  .blog1 .blogText.wrapper {
+    padding: 40px 0;
+  }
+  .blog1 .blogText.wrapper h3 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
   .blog2 .blogImage img {
     height: 215px;
+  }
+  .blog2 .blogText.wrapper {
+    padding: 40px 0;
+  }
+  .blog2 .blogText.wrapper h3 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+  .webLinks .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .webLinks .flexContainer li h4 {
+    font-size: 1.1rem;
+  }
+  .webLinks .flexContainer li:nth-child(2) {
+    margin: 35px;
   }
 }
 @media (max-width: 320px) {
@@ -888,10 +923,35 @@ ul.slideOutMenu a:focus {
     line-height: 30px;
     margin-top: 40px;
   }
+  .galleryAndAbout p,
+.blog p {
+    font-size: 0.8rem;
+    line-height: 22px;
+  }
   .galleryAndAbout h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .galleryAndAbout .gallery .full img {
-    height: 300px;
+    height: 250px;
+  }
+  .galleryAndAbout .about.wrapper {
+    padding-bottom: 60px;
+  }
+  .blog1 .blogImage img {
+    height: 165px;
+  }
+  .blog1 .blogText.wrapper h3 {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .blog2 .blogImage img {
+    height: 200px;
+  }
+  .blog2 .blogText.wrapper {
+    padding: 30px 0;
+  }
+  .blog2 .blogText.wrapper h3 {
+    font-size: 1.2rem;
+    padding: 10px 0 0 0;
   }
 }

@@ -98,7 +98,6 @@
     }
 
     // **** ABOUT SECTION **** //
-    
     // gallery styles
     .galleryAndAbout h3 {
         font-size: 1.5rem;
@@ -119,14 +118,14 @@
             }
             .half {
                 width: calc((100% / 2) - 2%);
-                margin-bottom: 13%;
             }
             .full {
-                margin: 0;
+                margin: 65px 0 0;
                 width: 100%;
                 img {
                     width: 100%;
-                    height: 375px;
+                    height: 400px;
+                    object-fit: fill;
                 }
             }
         }
@@ -160,7 +159,11 @@
             height: 280px;
         }
         .blogText.wrapper {
-            padding: 60px 0;
+            padding: 80px 0;
+            h3,
+            .btn2 {
+                align-self: center;
+            }
         }
     }
     
@@ -172,7 +175,11 @@
             height: 330px;
         }
         .blogText.wrapper {
-            padding: 60px 0;
+            padding: 80px 0;
+            h3,
+            .btn2 {
+                align-self: center;
+            }
         }
     }
     
@@ -191,12 +198,6 @@
 
 /* Third Big Break Point: Landscape phones and down */
 @media (max-width: 480px) {
-
-    /* wrapper  */
-    .wrapper {
-        width: 95%;
-    }
-
     // **** HEADER **** //
     header {
         background-position-x: -220px;
@@ -205,24 +206,25 @@
         }
     }
 
-    // **** ABOUT SECTION **** //
-    .about.wrapper {
-        padding-bottom: 80px;
+    // **** ABOUT SECTION **** //  
+    .galleryAndAbout {
+        .gallery {
+            padding-bottom: 20px;
+            .full img {
+                height: 320px;
+            }
+        }
     }
-        
+
     .about .textContainer {
         p {
-            padding-right: 15px;
-            padding-bottom: 30px;
-            letter-spacing: 0.3;
-            line-height: 28px;
+            padding: 10px 0 30px;
         }
         .btn1 {
-            font-size: 1rem;
             letter-spacing: 0.3;
             align-self: center;
             a {
-                padding: 20px 35px;
+                padding: 17px 27px;
             }
         }
     }
@@ -232,21 +234,40 @@
         .blogImage img {
             height: 165px;
         }
-
-        // .blogText.wrapper {
-        //     padding: 60px 0;
-        // }
+        .blogText.wrapper {
+            padding: 40px 0;
+            h3 {
+                font-size: 1.5rem;
+                padding: 10px 0;
+            }
+        }
     }
     
     .blog2 {
-
         .blogImage img {
             height: 215px;
         }
+        .blogText.wrapper {
+            padding: 40px 0;
+            h3 {
+                font-size: 1.5rem;
+                padding: 10px 0;
+            }
+        }
+    }
 
-        // .blogText.wrapper {
-        //     padding: 60px 0;
-        // }
+    // **** WEB LINKS SECTION **** //
+    .webLinks .flexContainer {
+        flex-direction: column;
+        align-items: center;
+        li {
+            h4 {
+                font-size: 1.1rem;
+            }
+            &:nth-child(2) {
+                margin: 35px;
+            }
+        }
     }
 }          
 
@@ -264,12 +285,51 @@
     }
 
     // **** ABOUT SECTION **** //
+    .galleryAndAbout p,
+    .blog p {
+        font-size: 0.80rem;
+        line-height: 22px;
+    }
+
     .galleryAndAbout {
         h3 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         .gallery .full img {
-            height: 300px;
+            height: 250px;
+        }
+        .about.wrapper {
+            padding-bottom: 60px;
+        }
+    }
+
+    // **** BLOG SECTION **** //
+    .blog1 {
+        .blogImage img {
+            height: 165px;
+        }
+
+        .blogText.wrapper {
+            h3 {
+                font-size: 1.2rem;
+                padding: 0;
+            }
+        }
+    }
+    
+        
+    .blog2 {
+        .blogImage img {
+            height: 200px;
+        }
+
+        .blogText.wrapper {
+            padding: 30px 0;
+
+            h3 {
+                font-size: 1.2rem;
+                padding: 10px 0 0 0;
+            }
         }
     }
 }
