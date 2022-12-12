@@ -607,9 +607,6 @@ footer {
 footer h5 {
   font-size: 1rem;
 }
-footer .wrapper {
-  margin-bottom: 80px;
-}
 footer .wrapper p {
   font-size: 0.85rem;
 }
@@ -617,6 +614,7 @@ footer .copyright {
   font-size: 0.7rem;
   text-align: center;
   padding: 6px 0;
+  margin-top: 80px;
   background-color: #2c2d2c;
 }
 
@@ -648,7 +646,6 @@ footer .copyright {
 
 .contactMenuDiv {
   width: 42%;
-  margin-left: 3%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -699,6 +696,26 @@ footer .copyright {
     -o-object-position: 50% 35%;
        object-position: 50% 35%;
     padding-bottom: 50px;
+  }
+  footer .wrapper.flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscriptionDiv,
+.contactMenuDiv {
+    width: 100%;
+    margin: 0;
+  }
+  .contactMenuDiv {
+    margin-top: 60px;
   }
 }
 /* Second Big Break Point: Landscape phone to portrait tablet */
@@ -912,6 +929,50 @@ ul.slideOutMenu a:focus {
   .webLinks .flexContainer li:nth-child(2) {
     margin: 35px;
   }
+  footer {
+    padding-top: 40px;
+  }
+  footer .copyright {
+    margin-top: 40px;
+  }
+  .subscriptionDiv h5,
+.subscriptionDiv p {
+    text-align: center;
+  }
+  .subscriptionDiv .emailInput.flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscriptionDiv .emailInput.flexContainer input[type=email] {
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .subscriptionDiv .emailInput.flexContainer button[type=submit] {
+    width: 35%;
+    padding: 10px 0;
+  }
+  .contactMenuDiv {
+    margin-top: 40px;
+  }
+  .contactMenuDiv .contact h5 {
+    margin-bottom: 8px;
+  }
+  .contactMenuDiv .contact p {
+    line-height: 20px;
+    font-size: 0.75rem;
+  }
+  .contactMenuDiv .contact span {
+    display: block;
+  }
+  .contactMenuDiv .footerNav li {
+    font-size: 0.92rem;
+  }
 }
 @media (max-width: 320px) {
   header {
@@ -953,5 +1014,8 @@ ul.slideOutMenu a:focus {
   .blog2 .blogText.wrapper h3 {
     font-size: 1.2rem;
     padding: 10px 0 0 0;
+  }
+  footer .subscriptionDiv p {
+    font-size: 0.73rem;
   }
 }
