@@ -1,6 +1,6 @@
 @use './variables' as *;
 
-/* Portrait tablet and small desktops */
+/* First Big Break Point: Portrait tablet and small desktops */
 @media (max-width: 940px) {
     /* wrapper  */
     .wrapper {
@@ -10,10 +10,31 @@
     // **** HEADER **** //
     header {
         background-position: center bottom;
+        h2 span {
+                display: block;
+        }
     }
+
+    // **** ABOUT SECTION **** //
+    .about.flexContainer {
+        padding: 0 0 50px;
+        flex-wrap: wrap;
+        .imgContainer,
+        .textContainer {
+            width: 100%;
+            margin: 0;
+        }
+        .hide img {
+            width: inherit;
+            height: 400px;
+            object-position: 50% 35%;
+            padding-bottom: 50px;
+        }
+    }
+
 }
 
-/* Landscape phone to portrait tablet */
+/* Second Big Break Point: Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
     // **** HEADER **** //
@@ -76,9 +97,49 @@
     .mediaLinks {
         display: none;
     }
+
+    // **** ABOUT SECTION **** //
+    // gallery styles
+    .galleryAndAbout h3 {
+        font-size: 1.5rem;
+    }
+
+    .gallery {
+        h3 {
+            padding: 40px 0;
+        }
+        ul {
+            flex-wrap: wrap;
+            .picOne {
+                margin-right: 2%;
+            }
+            .picTwo {
+                margin-left: 2%;
+                margin-right: 0;
+            }
+            .half {
+                width: calc((100% / 2) - 2%);
+                margin-bottom: 13%;
+            }
+            .full {
+                margin: 0;
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 375px;
+                }
+            }
+        }
+    }
+
+    // remove 'about' image
+    .hide {
+        display: none;
+    }
+
 }
 
-// Small Break Point
+// 1st Small Break Point
 @media (max-width: 680px) {
     header {
         background: url(../assets/headerMobile3.png);
@@ -86,26 +147,66 @@
         background-size: cover;
         background-position: -120px center;
     }
+
 }
 
-/* Landscape phones and down */
+/* Third Big Break Point: Landscape phones and down */
 @media (max-width: 480px) {
+
+    /* wrapper  */
+    .wrapper {
+        width: 95%;
+    }
+
     header {
         background-position-x: -220px;
         h2 {
             line-height: 1.8rem;
         }
     }
-}
 
+    // **** ABOUT SECTION **** //
+    .about.wrapper {
+        padding-bottom: 80px;
+    }
+        
+    .about .textContainer {
+        p {
+            padding-right: 15px;
+            padding-bottom: 30px;
+            letter-spacing: 0.3;
+            line-height: 28px;
+        }
+        .btn1 {
+            font-size: 1rem;
+            letter-spacing: 0.3;
+            align-self: center;
+            a {
+                padding: 20px 35px;
+            }
+        }
+    }
+}          
+
+// 2nd small break point
 @media (max-width: 320px) {
     header {
-        height: 80vh;
-        background-position-x: -140px;
+        height: 90vh;
+        background-position-x: -180px;
         h2 {
-            font-size: 1.58rem;
-            line-height: 28px;
+            font-size: 1.8rem;
+            line-height: 30px;
             margin-top: 40px;
+        }
+    }
+
+    // **** ABOUT SECTION **** //
+    .galleryAndAbout {
+        h3 {
+            font-size: 1.3rem;
+        }
+        .gallery .full img {
+            height: 300px;
         }
     }
 }

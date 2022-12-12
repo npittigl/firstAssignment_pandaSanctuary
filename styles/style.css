@@ -354,10 +354,6 @@ a {
   color: inherit;
 }
 
-span {
-  display: block;
-}
-
 .nav label,
 input[type=checkbox] {
   display: none;
@@ -387,7 +383,7 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -440,6 +436,9 @@ h3 {
 .nav .logo:hover, .nav .logo:focus {
   color: #116500;
 }
+.nav .logo span {
+  display: block;
+}
 .nav li a {
   font-weight: 700;
   text-shadow: 3px 3px 2px #000;
@@ -485,7 +484,6 @@ header h2 {
 .galleryAndAbout {
   background-color: #d6f1e4;
   color: #2c2d2c;
-  padding-top: 80px;
 }
 .galleryAndAbout h3 {
   color: #116500;
@@ -496,7 +494,7 @@ header h2 {
 }
 .gallery h3 {
   text-align: center;
-  padding-bottom: 70px;
+  padding: 80px 0 70px;
 }
 .gallery ul .picOne,
 .gallery ul .picTwo {
@@ -521,15 +519,20 @@ header h2 {
   width: 23%;
   margin-right: 2%;
 }
-.about .imgContainer img {
-  height: 100%;
-}
 .about .textContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 73%;
   margin-left: 2%;
 }
 .about .textContainer p {
-  margin: 20px 0px;
+  padding: 20px 0px;
+}
+.about .textContainer .btn1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .blog {
@@ -650,7 +653,7 @@ footer .copyright {
   color: #116500;
 }
 
-/* Portrait tablet and small desktops */
+/* First Big Break Point: Portrait tablet and small desktops */
 @media (max-width: 940px) {
   /* wrapper  */
   .wrapper {
@@ -659,8 +662,28 @@ footer .copyright {
   header {
     background-position: center bottom;
   }
+  header h2 span {
+    display: block;
+  }
+  .about.flexContainer {
+    padding: 0 0 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about.flexContainer .imgContainer,
+.about.flexContainer .textContainer {
+    width: 100%;
+    margin: 0;
+  }
+  .about.flexContainer .hide img {
+    width: inherit;
+    height: 400px;
+    -o-object-position: 50% 35%;
+       object-position: 50% 35%;
+    padding-bottom: 50px;
+  }
 }
-/* Landscape phone to portrait tablet */
+/* Second Big Break Point: Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   header h2 {
     line-height: 2.2rem;
@@ -716,6 +739,38 @@ ul.slideOutMenu a:focus {
   .mediaLinks {
     display: none;
   }
+  .galleryAndAbout h3 {
+    font-size: 1.5rem;
+  }
+  .gallery h3 {
+    padding: 40px 0;
+  }
+  .gallery ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gallery ul .picOne {
+    margin-right: 2%;
+  }
+  .gallery ul .picTwo {
+    margin-left: 2%;
+    margin-right: 0;
+  }
+  .gallery ul .half {
+    width: 48%;
+    margin-bottom: 13%;
+  }
+  .gallery ul .full {
+    margin: 0;
+    width: 100%;
+  }
+  .gallery ul .full img {
+    width: 100%;
+    height: 375px;
+  }
+  .hide {
+    display: none;
+  }
 }
 @media (max-width: 680px) {
   header {
@@ -725,23 +780,51 @@ ul.slideOutMenu a:focus {
     background-position: -120px center;
   }
 }
-/* Landscape phones and down */
+/* Third Big Break Point: Landscape phones and down */
 @media (max-width: 480px) {
+  /* wrapper  */
+  .wrapper {
+    width: 95%;
+  }
   header {
     background-position-x: -220px;
   }
   header h2 {
     line-height: 1.8rem;
   }
+  .about.wrapper {
+    padding-bottom: 80px;
+  }
+  .about .textContainer p {
+    padding-right: 15px;
+    padding-bottom: 30px;
+    letter-spacing: 0.3;
+    line-height: 28px;
+  }
+  .about .textContainer .btn1 {
+    font-size: 1rem;
+    letter-spacing: 0.3;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .about .textContainer .btn1 a {
+    padding: 20px 35px;
+  }
 }
 @media (max-width: 320px) {
   header {
-    height: 80vh;
-    background-position-x: -140px;
+    height: 90vh;
+    background-position-x: -180px;
   }
   header h2 {
-    font-size: 1.58rem;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 30px;
     margin-top: 40px;
+  }
+  .galleryAndAbout h3 {
+    font-size: 1.3rem;
+  }
+  .galleryAndAbout .gallery .full img {
+    height: 300px;
   }
 }

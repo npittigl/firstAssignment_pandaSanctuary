@@ -10,6 +10,9 @@
         &:focus {
             color: $accentColor;
         }
+        span {
+            display: block;
+        }
     }
     li {
         a {

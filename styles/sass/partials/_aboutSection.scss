@@ -5,7 +5,6 @@
 .galleryAndAbout {
     background-color: $secondaryColor;
     color: $black;
-    padding-top: 80px;
     h3 {
         color: $accentColor;
     }
@@ -16,7 +15,7 @@
     padding-bottom: 45px;
     h3 {
         text-align: center;
-        padding-bottom: 70px;
+        padding: 80px 0 70px;
     }
     ul {
         .picOne,
@@ -43,16 +42,16 @@
     .imgContainer {
         width: calc(25% - 2%);
         margin-right: 2%;
-
-        img {
-            height: 100%;
-        }
     }
     .textContainer {
+        flex-direction: column;
         width: calc(75% - 2%);
         margin-left: 2%;
         p {
-            margin: 20px 0px;
+            padding: 20px 0px;
+        }
+        .btn1 {
+            align-self: flex-start;
         }
     }
 }
