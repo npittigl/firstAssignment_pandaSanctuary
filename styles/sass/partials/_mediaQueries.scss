@@ -31,7 +31,6 @@
             padding-bottom: 50px;
         }
     }
-
 }
 
 /* Second Big Break Point: Landscape phone to portrait tablet */
@@ -99,6 +98,7 @@
     }
 
     // **** ABOUT SECTION **** //
+    
     // gallery styles
     .galleryAndAbout h3 {
         font-size: 1.5rem;
@@ -137,6 +137,45 @@
         display: none;
     }
 
+    // **** BLOG SECTION **** //
+    .blog {
+        .blogText.flexContainer {
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+        }
+        .blogImage {
+            width: 100%;
+        }
+        .blogText.wrapper {
+            width: 90%;
+        }
+    }
+    
+    .blog1 {
+        width: 100%;
+        flex-direction: column-reverse;
+        .blogImage img {
+            width: 100%;
+            height: 280px;
+        }
+        .blogText.wrapper {
+            padding: 60px 0;
+        }
+    }
+    
+    .blog2 {
+        width: 100%;
+        flex-direction: column;
+        .blogImage img {
+            width: 100%;
+            height: 330px;
+        }
+        .blogText.wrapper {
+            padding: 60px 0;
+        }
+    }
+    
 }
 
 // 1st Small Break Point
@@ -158,6 +197,7 @@
         width: 95%;
     }
 
+    // **** HEADER **** //
     header {
         background-position-x: -220px;
         h2 {
@@ -186,10 +226,33 @@
             }
         }
     }
+
+    // **** BLOG SECTION **** //
+    .blog1 {
+        .blogImage img {
+            height: 165px;
+        }
+
+        // .blogText.wrapper {
+        //     padding: 60px 0;
+        // }
+    }
+    
+    .blog2 {
+
+        .blogImage img {
+            height: 215px;
+        }
+
+        // .blogText.wrapper {
+        //     padding: 60px 0;
+        // }
+    }
 }          
 
 // 2nd small break point
 @media (max-width: 320px) {
+    // **** HEADER **** //
     header {
         height: 90vh;
         background-position-x: -180px;

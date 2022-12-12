@@ -1,15 +1,28 @@
 @use './variables' as *;
+
 .blog {
     background: $primaryColor;
+    .blogText.flexContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3,
+        .btn2 {
+            align-self: flex-start;
+        }
+    }
     .blogText,
     .blogImage {
         width: calc(100% / 2);
     }
     .blog1 .blogText {
-        padding: 120px 35px 0 95px;
+        // padding: 120px 35px 0 95px;
+        padding: 30px 35px 35px 95px; 
     }
     .blog2 .blogText {
-        padding: 120px 95px 0 45px;
+        // padding: 120px 95px 0 45px;
+        padding: 30px 95px 35px 45px;
     }
     p {
         margin: 30px 0;
