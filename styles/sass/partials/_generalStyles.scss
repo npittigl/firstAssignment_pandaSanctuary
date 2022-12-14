@@ -1,7 +1,7 @@
 
 @use './variables' as *;
 
-// stripping styles
+// Stripping Styles
 body,
 p,
 ul,
@@ -27,16 +27,22 @@ a {
     color: inherit;
 }
 
-// hide hamburger icon in nav
+// Hide Nav Hamburger Icon
 .nav label,
 input[type="checkbox"] {
     display: none;
 }
 
-// general styles
+// General Styles
 html {
     font-size: 125%;
     font-family: $bodyFont;
+}
+
+body {
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    font-size: 0.9rem;
 }
 
 h3,
@@ -49,18 +55,12 @@ h5,
     font-family: $styleFont;
 }
 
-body {
-    line-height: 26px;
-    letter-spacing: 0.2px;
-    font-size: 0.9rem;
-}
-
 h3 {
     font-size: 1.8rem;
     line-height: 32px;
 }
 
-// text colors
+// Text Colors
 .galleryAndAbout h3,
 .webLinks h4  {
     color: $accentColor;
@@ -68,7 +68,8 @@ h3 {
 
 body,
 h3,
-.btn1 {
+.btn1,
+.btn3 {
     color: $white;
 }
 
@@ -77,27 +78,27 @@ h3,
     color: $black;
 }
 
-// background colors
+// Background Colors
 .blog,
 footer {
     background: $primaryColor;
 }
 
-// images
-img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-// wrapper
+// Wrapper
 .wrapper {
     max-width: 1800px;
     width: 85%;
     margin: 0 auto;
 }
 
-// flex box
+// Images
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// Flex Box
 .flexContainer {
     display: flex;
 }
@@ -118,7 +119,7 @@ img {
     align-self: flex-start;
 }
 
-// button styles
+// Button Styles
 .btn {
     border: 2px solid transparent;
     cursor: pointer;
@@ -127,7 +128,7 @@ img {
     }
 }
 
-// animation transitions
+// Animation Transitions
 .mediaLinks a,
 .logo {
     transition-property: font-size;
@@ -142,7 +143,7 @@ img {
     font-size: 1.15rem;
 }
 
-// center text align
+// Center Text Align
 .mediaLinks,
 .gallery h3,
 .webLinks li,

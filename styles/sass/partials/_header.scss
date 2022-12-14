@@ -1,9 +1,9 @@
 
 @use './variables' as *;
 
-// general header styles 
+// General Header Styles 
 header {
-    min-height: 100vh;
+    height: 100vh;
     background: url(../assets/header-image.png) no-repeat right center / cover;
     h2 {
         width: 40%;
@@ -15,7 +15,7 @@ header {
     }
 }
 
-// mediaLinks styles
+// Media Links Styles
 .mediaLinks {
     width: 30px;
     position: fixed;

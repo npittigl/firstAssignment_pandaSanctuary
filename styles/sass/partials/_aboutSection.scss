@@ -1,12 +1,12 @@
 
 @use './variables' as *;
 
-// gallery and about section general styles
+// Gallery and About Section General Styles
 .galleryAndAbout {
     background-color: $secondaryColor;
 }
 
-// gallery styles
+// Gallery Styles
 .gallery {
     padding-bottom: 45px;
     h3 {
@@ -31,7 +31,7 @@
     }
 }
 
-// aboutText styles
+// About Text Styles
 .about {
     padding: 45px 0 80px;
     .imgContainer {

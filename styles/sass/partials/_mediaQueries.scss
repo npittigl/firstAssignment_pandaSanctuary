@@ -1,8 +1,11 @@
 @use './variables' as *;
 
-/* First Big Break Point: Portrait tablet and small desktops */
+// RESPONSIVE DESIGN: MEDIA QUERIES
+
+/* First Big Break Point: Portrait Tablet and Small Desktops */
 @media (max-width: 940px) {
-    /* wrapper  */
+    // **** GENERAL STYLE **** //
+    // Wrapper
     .wrapper {
         width: 90%;
     }
@@ -52,7 +55,7 @@
     }
 }
 
-/* Second Big Break Point: Landscape phone to portrait tablet */
+/* Second Big Break Point: Landscape Phone to Portrait Tablet */
 @media (max-width: 768px) {
 
     // **** HEADER **** //
@@ -60,7 +63,7 @@
         line-height: 2.2rem;
     }
 
-    /* nav slide-out menu */
+    // Nav Slide-Out Menu //
     i.fa-bars {
         font-size: 1.8rem;
     }
@@ -111,13 +114,13 @@
         z-index: 10;
     }
 
-    // remove mediaLinks
+    // Remove Media Links
     .mediaLinks {
         display: none;
     }
 
     // **** ABOUT SECTION **** //
-    // gallery styles
+    // Gallery Styles
     .galleryAndAbout h3 {
         font-size: 1.5rem;
     }
@@ -150,7 +153,7 @@
         }
     }
 
-    // remove 'about' image
+    // Remove 'About' Image
     .hide {
         display: none;
     }
@@ -201,7 +204,6 @@
             }
         }
     }
-    
 }
 
 // 1st Small Break Point
@@ -212,10 +214,9 @@
         background-size: cover;
         background-position: -120px center;
     }
-
 }
 
-/* Third Big Break Point: Landscape phones and down */
+/* Third Big Break Point: Landscape Phones and Down */
 @media (max-width: 480px) {
     // **** HEADER **** //
     header {
