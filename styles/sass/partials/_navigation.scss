@@ -5,11 +5,8 @@
 .nav {
     padding-top: 20px;
     .logo {
-        line-height: 18px;
-        &:hover,
-        &:focus {
-            color: $accentColor;
-        }
+        line-height: 20px;
+        transition-delay: 0.2s;
         span {
             display: block;
         }

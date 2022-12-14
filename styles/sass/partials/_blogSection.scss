@@ -1,16 +1,9 @@
 @use './variables' as *;
 
 .blog {
-    background: $primaryColor;
     .blogText.flexContainer {
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        h3,
-        .btn2 {
-            align-self: flex-start;
-        }
     }
     .blogText,
     .blogImage {
@@ -26,14 +19,14 @@
         margin: 30px 0;
     }
     .btn2 {
-        background-color: #fff;
+        background-color: $white;
         color: $primaryColor;
     }
     .btn2:hover,
     .btn2:focus {
-        background-color: #213c28;
-        border: 2px solid #fff;
-        color: #fff;
+        background: $primaryColor;
+        border: 2px solid $white;
+        color: $white;
     }
 }
 

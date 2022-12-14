@@ -375,10 +375,35 @@ h5,
 }
 
 body {
-  color: #fff;
   line-height: 26px;
   letter-spacing: 0.2px;
   font-size: 0.9rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 32px;
+}
+
+.galleryAndAbout h3,
+.webLinks h4 {
+  color: #116500;
+}
+
+body,
+h3,
+.btn1 {
+  color: #fff;
+}
+
+.galleryAndAbout,
+.webLinks {
+  color: #2c2d2c;
+}
+
+.blog,
+footer {
+  background: #213c28;
 }
 
 img {
@@ -400,42 +425,67 @@ img {
   display: flex;
 }
 
-.nav {
+.about .textContainer,
+.blogText.flexContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav,
+.contactMenuDiv {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-h3 {
-  font-size: 1.8rem;
-  line-height: 32px;
+.btn1,
+.blog h3,
+.blog .btn2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .btn {
-  background-color: #116500;
   border: 2px solid transparent;
-  color: #fff;
   cursor: pointer;
 }
 .btn a {
   padding: 8px 15px;
 }
 
-.btn:hover,
-.btn:focus {
-  background-color: #fff;
-  border: 2px solid #116500;
-  color: #116500;
+.mediaLinks a,
+.logo {
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.mediaLinks a:hover,
+.mediaLinks a:focus,
+.logo:hover,
+.logo:focus {
+  font-size: 1.15rem;
+}
+
+.mediaLinks,
+.gallery h3,
+.webLinks li,
+.copyright {
+  text-align: center;
 }
 
 .nav {
   padding-top: 20px;
 }
 .nav .logo {
-  line-height: 18px;
-}
-.nav .logo:hover, .nav .logo:focus {
-  color: #116500;
+  line-height: 20px;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 .nav .logo span {
   display: block;
@@ -454,9 +504,8 @@ h3 {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   background: url(../assets/header-image.png) no-repeat right center/cover;
-  color: #fff;
 }
 header h2 {
   width: 40%;
@@ -468,33 +517,25 @@ header h2 {
 }
 
 .mediaLinks {
+  width: 30px;
   position: fixed;
   top: 120px;
   right: 30px;
 }
 .mediaLinks a {
   padding-bottom: 8px;
-}
-.mediaLinks a:hover, .mediaLinks a:focus {
-  color: #116500;
-}
-.mediaLinks a i.fa-facebook-f {
-  padding: 0 3px;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .galleryAndAbout {
   background-color: #d6f1e4;
-  color: #2c2d2c;
-}
-.galleryAndAbout h3 {
-  color: #116500;
 }
 
 .gallery {
   padding-bottom: 45px;
 }
 .gallery h3 {
-  text-align: center;
   padding: 80px 0 70px;
 }
 .gallery ul .picOne,
@@ -521,10 +562,6 @@ header h2 {
   margin-right: 2%;
 }
 .about .textContainer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 73%;
   margin-left: 2%;
 }
@@ -532,29 +569,21 @@ header h2 {
   padding: 20px 0px;
 }
 .about .textContainer .btn1 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  background-color: #116500;
+}
+.about .textContainer .btn1:hover, .about .textContainer .btn1:focus {
+  background-color: #fff;
+  border: 2px solid #116500;
+  color: #116500;
 }
 
-.blog {
-  background: #213c28;
-}
 .blog .blogText.flexContainer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.blog .blogText.flexContainer h3,
-.blog .blogText.flexContainer .btn2 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 .blog .blogText,
 .blog .blogImage {
@@ -575,7 +604,7 @@ header h2 {
 }
 .blog .btn2:hover,
 .blog .btn2:focus {
-  background-color: #213c28;
+  background: #213c28;
   border: 2px solid #fff;
   color: #fff;
 }
@@ -583,7 +612,6 @@ header h2 {
 .webLinks {
   background: url(../assets/image-5@2x.png);
   padding: 7.5% 0;
-  color: #2c2d2c;
 }
 .webLinks ul {
   -webkit-box-pack: center;
@@ -591,17 +619,14 @@ header h2 {
           justify-content: center;
 }
 .webLinks ul li {
-  text-align: center;
   width: 33.3333333333%;
 }
 .webLinks ul li h4 {
-  color: #116500;
   margin-top: 12px;
   font-size: 1.2rem;
 }
 
 footer {
-  background-color: #213c28;
   padding-top: 80px;
 }
 footer h5 {
@@ -609,32 +634,35 @@ footer h5 {
 }
 footer .copyright {
   font-size: 0.7rem;
-  text-align: center;
   padding: 6px 0;
   margin-top: 80px;
   background-color: #2c2d2c;
 }
 
-.subscriptionDiv {
+.subscriptionDiv,
+.contactMenuDiv {
   width: 50%;
 }
+
 .subscriptionDiv p {
   font-size: 0.85rem;
   margin: 10px 0 8px;
 }
 .subscriptionDiv form input[type=email] {
   width: 76%;
-  height: 45px;
+  height: 42px;
   padding: 10px 15px;
   font-size: 0.8rem;
   letter-spacing: 0.3px;
 }
 .subscriptionDiv form .btn3 {
-  width: 24%;
+  min-width: 24%;
+  max-width: 52%;
+  padding: 7px 18px;
   background: #2c2d2c;
   border: 2px solid transparent;
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 .subscriptionDiv form .btn3:hover, .subscriptionDiv form .btn3:focus {
   border: 2px solid #2c2d2c;
@@ -642,12 +670,6 @@ footer .copyright {
   color: #2c2d2c;
 }
 
-.contactMenuDiv {
-  width: 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .contactMenuDiv .contact {
   padding-left: 90px;
 }
@@ -666,7 +688,7 @@ footer .copyright {
   width: 100%;
 }
 .footerNav li a:hover, .footerNav li a:focus {
-  color: #116500;
+  text-shadow: 5px 5px 3px #000;
 }
 
 /* First Big Break Point: Portrait tablet and small desktops */
@@ -956,10 +978,6 @@ ul.slideOutMenu a:focus {
     margin-bottom: 12px;
     text-align: center;
   }
-  .subscriptionDiv .emailInput.flexContainer .btn3 {
-    width: 35%;
-    padding: 10px 0;
-  }
   .contactMenuDiv {
     margin-top: 40px;
   }
@@ -1020,8 +1038,5 @@ ul.slideOutMenu a:focus {
   }
   .subscriptionDiv p {
     font-size: 0.73rem;
-  }
-  .subscriptionDiv .emailInput.flexContainer button[type=submit] {
-    width: 52%;
   }
 }

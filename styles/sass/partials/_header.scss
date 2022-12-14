@@ -3,9 +3,8 @@
 
 // general header styles 
 header {
-    height: 100vh;
+    min-height: 100vh;
     background: url(../assets/header-image.png) no-repeat right center / cover;
-    color: $white;
     h2 {
         width: 40%;
         min-width: 220px;
@@ -18,18 +17,12 @@ header {
 
 // mediaLinks styles
 .mediaLinks {
+    width: 30px;
     position: fixed;
     top: 120px;
     right: 30px;
     a {
         padding-bottom: 8px;
-
-        &:hover,
-        &:focus {
-            color: $accentColor;
-        }
-        i.fa-facebook-f {
-            padding: 0 3px;
-        }
+        transition-delay: 0.1s;
     }    
 }

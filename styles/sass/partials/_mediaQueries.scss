@@ -310,10 +310,6 @@
                 margin-bottom: 12px;
                 text-align: center;
             }
-            .btn3 {
-                width: 35%;
-                padding: 10px 0;
-            }
         }
     }
 
@@ -402,11 +398,5 @@
     // *** FOOTER ***//
     .subscriptionDiv p {
         font-size: .73rem;
-    }
-
-    .subscriptionDiv .emailInput.flexContainer {
-        button[type="submit"] {
-            width: 52%;
-        }
     }
 }

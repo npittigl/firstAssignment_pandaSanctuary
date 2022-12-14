@@ -27,11 +27,6 @@ a {
     color: inherit;
 }
 
-// add img too??
-// span {
-//     display: block;
-// }
-
 // hide hamburger icon in nav
 .nav label,
 input[type="checkbox"] {
@@ -55,12 +50,40 @@ h5,
 }
 
 body {
-    color: $white;
     line-height: 26px;
     letter-spacing: 0.2px;
     font-size: 0.9rem;
 }
 
+h3 {
+    font-size: 1.8rem;
+    line-height: 32px;
+}
+
+// text colors
+.galleryAndAbout h3,
+.webLinks h4  {
+    color: $accentColor;
+}
+
+body,
+h3,
+.btn1 {
+    color: $white;
+}
+
+.galleryAndAbout,
+.webLinks {
+    color: $black;
+}
+
+// background colors
+.blog,
+footer {
+    background: $primaryColor;
+}
+
+// images
 img {
     max-width: 100%;
     height: 100%;
@@ -79,29 +102,51 @@ img {
     display: flex;
 }
 
-.nav {
+.about .textContainer, 
+.blogText.flexContainer {
+    flex-direction: column;
+}
+
+.nav,
+.contactMenuDiv {
     justify-content: space-between;
 }
 
-h3 {
-    font-size: 1.8rem;
-    line-height: 32px;
+.btn1,
+.blog h3,
+.blog .btn2 {
+    align-self: flex-start;
 }
 
 // button styles
 .btn {
-    background-color: $accentColor;
     border: 2px solid transparent;
-    color: $white;
     cursor: pointer;
     a {
         padding: 8px 15px;
     }
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: $white;
-    border: 2px solid $accentColor;
-    color: $accentColor;
+// animation transitions
+.mediaLinks a,
+.logo {
+    transition-property: font-size;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.8s;
 }
+
+.mediaLinks a:hover,
+.mediaLinks a:focus,
+.logo:hover,
+.logo:focus {
+    font-size: 1.15rem;
+}
+
+// center text align
+.mediaLinks,
+.gallery h3,
+.webLinks li,
+.copyright {
+    text-align: center;
+}
+    
