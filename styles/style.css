@@ -339,6 +339,7 @@ h3,
 h4,
 h5,
 button,
+input,
 img {
   margin: 0;
   padding: 0;
@@ -349,6 +350,7 @@ ul {
 }
 
 a {
+  cursor: pointer;
   display: inline-block;
   text-decoration: none;
   color: inherit;
@@ -362,6 +364,7 @@ input[type=checkbox] {
 html {
   font-size: 125%;
   font-family: "Barlow", sans-serif;
+  font-weight: 400;
 }
 
 body {
@@ -408,7 +411,7 @@ footer {
 }
 
 .wrapper {
-  max-width: 1800px;
+  max-width: 1260px;
   width: 85%;
   margin: 0 auto;
 }
@@ -493,8 +496,9 @@ img {
 }
 .nav li a {
   font-weight: 700;
-  text-shadow: 3px 3px 2px #000;
+  line-height: 29px;
   padding-bottom: 8%;
+  text-shadow: 3px 3px 2px #000;
   border: 2px solid transparent;
 }
 .nav li a:hover, .nav li a:focus {
@@ -531,13 +535,14 @@ header h2 {
 
 .galleryAndAbout {
   background-color: #d6f1e4;
+  padding: 60px 0;
 }
 
 .gallery {
-  padding-bottom: 45px;
+  margin-bottom: 70px;
 }
 .gallery h3 {
-  padding: 80px 0 70px;
+  margin-bottom: 60px;
 }
 .gallery ul .picOne,
 .gallery ul .picTwo {
@@ -552,12 +557,9 @@ header h2 {
   width: 32.3333333333%;
 }
 .gallery ul .picTwo {
-  width: 32.3333333333%;
+  width: 31.3333333333%;
 }
 
-.about {
-  padding: 45px 0 80px;
-}
 .about .imgContainer {
   width: 23%;
   margin-right: 2%;
@@ -567,7 +569,7 @@ header h2 {
   margin-left: 2%;
 }
 .about .textContainer p {
-  padding: 20px 0px;
+  margin: 20px 0px;
 }
 .about .textContainer .btn1 {
   background-color: #116500;
@@ -643,11 +645,9 @@ footer .copyright {
   margin-top: 80px;
 }
 
-.subscriptionDiv,
-.contactMenuDiv {
+.subscriptionDiv {
   width: 50%;
 }
-
 .subscriptionDiv p {
   font-size: 0.85rem;
   margin: 10px 0 8px;
@@ -661,9 +661,9 @@ footer .copyright {
 }
 .subscriptionDiv form .btn3 {
   min-width: 24%;
-  max-width: 52%;
-  padding: 7px 18px;
-  font-size: 0.8rem;
+  max-width: 55%;
+  padding: 7px 20px;
+  font-size: 0.78rem;
   border: 1px solid transparent;
 }
 .subscriptionDiv form .btn3:hover, .subscriptionDiv form .btn3:focus {
@@ -672,8 +672,13 @@ footer .copyright {
   color: #2c2d2c;
 }
 
-.contactMenuDiv .contact {
-  padding-left: 90px;
+.contactMenuDiv {
+  margin-left: 6%;
+  width: 44%;
+}
+.contactMenuDiv .contact p {
+  font-size: 0.85rem;
+  line-height: 24px;
 }
 .contactMenuDiv h5 {
   margin-bottom: 14px;
@@ -690,7 +695,7 @@ footer .copyright {
   width: 100%;
 }
 .footerNav li a:hover, .footerNav li a:focus {
-  text-shadow: 5px 5px 3px #000;
+  text-shadow: -5px 5px 3px #000;
 }
 
 /* First Big Break Point: Portrait Tablet and Small Desktops */
@@ -705,7 +710,6 @@ footer .copyright {
     display: block;
   }
   .about.flexContainer {
-    padding: 0 0 50px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -714,12 +718,14 @@ footer .copyright {
     width: 100%;
     margin: 0;
   }
-  .about.flexContainer .hide img {
+  .about.flexContainer .imgContainer {
+    margin-bottom: 40px;
+  }
+  .about.flexContainer .imgContainer.hide img {
     width: inherit;
-    height: 400px;
+    height: 350px;
     -o-object-position: 50% 35%;
        object-position: 50% 35%;
-    padding-bottom: 50px;
   }
   footer .wrapper.flexContainer {
     -webkit-box-orient: vertical;
@@ -738,7 +744,7 @@ footer .copyright {
     width: 100%;
   }
   .contactMenuDiv {
-    margin-top: 60px;
+    margin: 60px 0 0;
   }
   .contactMenuDiv .contact {
     padding-left: 0;
@@ -780,8 +786,7 @@ footer .copyright {
     font-size: 2.3rem;
     text-align: center;
   }
-  ul.slideOutMenu a:hover,
-ul.slideOutMenu a:focus {
+  ul.slideOutMenu a:hover, ul.slideOutMenu a:focus {
     background-color: rgba(17, 101, 0, 0.6);
     border-bottom-color: transparent;
   }
@@ -802,8 +807,11 @@ ul.slideOutMenu a:focus {
   .galleryAndAbout h3 {
     font-size: 1.5rem;
   }
+  .gallery {
+    margin-bottom: 25px;
+  }
   .gallery h3 {
-    padding: 40px 0;
+    margin-bottom: 35px;
   }
   .gallery ul {
     -ms-flex-wrap: wrap;
@@ -820,7 +828,7 @@ ul.slideOutMenu a:focus {
     width: 48%;
   }
   .gallery ul .full {
-    margin: 65px 0 0;
+    margin: 55px 0 0;
     width: 100%;
   }
   .gallery ul .full img {
@@ -900,16 +908,17 @@ ul.slideOutMenu a:focus {
     background-position-x: -220px;
   }
   header h2 {
-    line-height: 1.8rem;
+    font-size: 1.8rem;
+    line-height: 32px;
   }
-  .galleryAndAbout .gallery {
-    padding-bottom: 20px;
+  .galleryAndAbout {
+    padding: 40px 0 60px;
   }
   .galleryAndAbout .gallery .full img {
-    height: 320px;
+    height: 300px;
   }
   .about .textContainer p {
-    padding: 10px 0 30px;
+    margin: 10px 0 30px;
   }
   .about .textContainer .btn1 {
     letter-spacing: 0.3;
@@ -998,11 +1007,10 @@ ul.slideOutMenu a:focus {
 @media (max-width: 320px) {
   header {
     height: 90vh;
-    background-position-x: -180px;
   }
   header h2 {
-    font-size: 1.8rem;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 26px;
     margin-top: 40px;
   }
   .galleryAndAbout p,
@@ -1015,9 +1023,6 @@ ul.slideOutMenu a:focus {
   }
   .galleryAndAbout .gallery .full img {
     height: 250px;
-  }
-  .galleryAndAbout .about.wrapper {
-    padding-bottom: 60px;
   }
   .blog1 .blogImage img {
     height: 165px;

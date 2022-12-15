@@ -12,6 +12,7 @@ h3,
 h4,
 h5,
 button,
+input,
 img {
     margin: 0;
     padding: 0;
@@ -22,6 +23,7 @@ ul {
 }
 
 a {
+    cursor: pointer;
     display: inline-block;
     text-decoration: none;
     color: inherit;
@@ -37,12 +39,13 @@ input[type="checkbox"] {
 html {
     font-size: 125%;
     font-family: $bodyFont;
+    font-weight: 400;
 }
 
 body {
     line-height: 26px;
     letter-spacing: 0.2px;
-    font-size: 0.9rem;
+    font-size: 0.90rem;
 }
 
 h3,
@@ -86,7 +89,7 @@ footer {
 
 // Wrapper
 .wrapper {
-    max-width: 1800px;
+    max-width: 1260px;
     width: 85%;
     margin: 0 auto;
 }

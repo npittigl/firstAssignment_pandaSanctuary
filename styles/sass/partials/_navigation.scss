@@ -4,6 +4,7 @@
 // Header Navigation Bar Styles
 .nav {
     padding-top: 20px;
+    // Logo Styles
     .logo {
         line-height: 20px;
         transition-delay: 0.2s;
@@ -11,11 +12,13 @@
             display: block;
         }
     }
+    // nav Links Styles
     li {
         a {
             font-weight: 700;
-            text-shadow: 3px 3px 2px #000;
+            line-height: 29px;
             padding-bottom: 8%;
+            text-shadow: 3px 3px 2px $black2;
             border: 2px solid transparent;
 
             &:hover,
