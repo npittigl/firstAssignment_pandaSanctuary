@@ -4,13 +4,13 @@
 header {
     // General Header Styles 
     height: 100vh;
-    background: url(../assets/header-image.png) no-repeat right center / cover;
+    background: url(../assets/header-image.png) no-repeat bottom center / cover;
     // Second Header Styles
     h2 {
         width: 40%;
         min-width: 220px;
         margin-top: 50px;
-        font-size: clamp(1.875rem, 1.5236rem + 1.7568vw, 3.5rem);
+        font-size: clamp(1.65rem, 1.1904rem + 2.2979vw, 3rem);
         line-height: 2.5rem;
         letter-spacing: 0.8px;
     }

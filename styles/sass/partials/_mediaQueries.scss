@@ -13,9 +13,6 @@
     // **** HEADER **** //
     header {
         background-position: center bottom;
-        h2 span {
-                display: block;
-        }
     }
 
     // **** ABOUT SECTION **** //
@@ -30,7 +27,7 @@
             margin-bottom: 40px;
             &.hide img {
                 width: inherit;
-                height: 350px;
+                height: 340px;
                 object-position: 50% 35%;
             }
         }
@@ -61,7 +58,10 @@
 
     // **** HEADER **** //
     header h2 {
-        line-height: 2.2rem;
+        line-height: 1.8rem;
+        span {
+            display: block;
+        }
     }
 
     // Nav Slide-Out Menu //
@@ -123,47 +123,13 @@
         font-size: 1.5rem;
     }
 
-    .gallery {
-        margin-bottom: 25px;
-        h3 {
-            margin-bottom: 35px
-        }
-        ul {
-            flex-wrap: wrap;
-            .picOne {
-                margin-right: 2%;
-            }
-            .picTwo {
-                margin-left: 2%;
-                margin-right: 0;
-            }
-            .half {
-                width: calc((100% / 2) - 2%);
-            }
-            .full {
-                margin: 55px 0 0;
-                width: 100%;
-                img {
-                    width: 100%;
-                    height: 400px;
-                    object-fit: fill;
-                }
-            }
-        }
-    }
-
-    // Remove 'About' Image
-    .hide {
-        display: none;
-    }
-
     // **** BLOG SECTION **** //
     .blog {
         .blogText.flexContainer {
             align-items: flex-start;
             justify-content: center;
-            width: 100%;
         }
+        .blogText.flexContainer,
         .blogImage {
             width: 100%;
         }
@@ -176,7 +142,7 @@
         width: 100%;
         flex-direction: column-reverse;
         .blogImage img {
-            width: 100%;
+            width: inherit;
             height: 280px;
         }
         .blogText.wrapper {
@@ -192,7 +158,7 @@
         width: 100%;
         flex-direction: column;
         .blogImage img {
-            width: 100%;
+            width: inherit;
             height: 330px;
         }
         .blogText.wrapper {
@@ -213,6 +179,49 @@
         background-size: cover;
         background-position: -120px center;
     }
+
+    // **** ABOUT SECTION **** //
+    // About Image Gallery 
+    .gallery {
+        margin-bottom: 25px;
+
+        h3 {
+            margin-bottom: 35px
+        }
+
+        ul {
+            flex-wrap: wrap;
+
+            .picOne {
+                margin-right: 2%;
+            }
+    
+            .picTwo {
+                margin-left: 2%;
+                margin-right: 0;
+            }
+
+            .half {
+                width: calc((100% / 2) - 2%);
+            }
+    
+            .full {
+                margin: 55px 0 0;
+                width: 100%;
+
+                img {
+                    width: inherit;
+                    height: 400px;
+                    object-fit: fill;
+                }
+            }
+        }
+    }
+    
+    // Remove 'About' Image
+    .hide {
+        display: none;
+    }
 }
 
 /* Third Big Break Point: Landscape Phones and Down */
@@ -221,7 +230,6 @@
     header {
         background-position-x: -220px;
         h2 {
-            font-size: 1.8rem;
             line-height: 32px;
         }
     }
@@ -252,7 +260,7 @@
     // **** BLOG SECTION **** //
     .blog1 {
         .blogImage img {
-            height: 165px;
+            height: 175px;
         }
         .blogText.wrapper {
             padding: 40px 0;
@@ -338,10 +346,9 @@
 @media (max-width: 320px) {
     // **** HEADER **** //
     header {
-        height: 90vh;
+        // background-position-x: ;
         h2 {
-            font-size: 1.5rem;
-            line-height: 26px;
+            line-height: 30px;
             margin-top: 40px;
         }
     }

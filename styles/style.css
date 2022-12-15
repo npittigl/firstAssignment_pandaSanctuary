@@ -510,13 +510,13 @@ img {
 
 header {
   height: 100vh;
-  background: url(../assets/header-image.png) no-repeat right center/cover;
+  background: url(../assets/header-image.png) no-repeat bottom center/cover;
 }
 header h2 {
   width: 40%;
   min-width: 220px;
   margin-top: 50px;
-  font-size: clamp(1.875rem, 1.5236rem + 1.7568vw, 3.5rem);
+  font-size: clamp(1.65rem, 1.1904rem + 2.2979vw, 3rem);
   line-height: 2.5rem;
   letter-spacing: 0.8px;
 }
@@ -706,9 +706,6 @@ footer .copyright {
   header {
     background-position: center bottom;
   }
-  header h2 span {
-    display: block;
-  }
   .about.flexContainer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -723,7 +720,7 @@ footer .copyright {
   }
   .about.flexContainer .imgContainer.hide img {
     width: inherit;
-    height: 350px;
+    height: 340px;
     -o-object-position: 50% 35%;
        object-position: 50% 35%;
   }
@@ -753,7 +750,10 @@ footer .copyright {
 /* Second Big Break Point: Landscape Phone to Portrait Tablet */
 @media (max-width: 768px) {
   header h2 {
-    line-height: 2.2rem;
+    line-height: 1.8rem;
+  }
+  header h2 span {
+    display: block;
   }
   i.fa-bars {
     font-size: 1.8rem;
@@ -807,6 +807,67 @@ footer .copyright {
   .galleryAndAbout h3 {
     font-size: 1.5rem;
   }
+  .blog .blogText.flexContainer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog .blogText.flexContainer,
+.blog .blogImage {
+    width: 100%;
+  }
+  .blog .blogText.wrapper {
+    width: 90%;
+  }
+  .blog1 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .blog1 .blogImage img {
+    width: inherit;
+    height: 280px;
+  }
+  .blog1 .blogText.wrapper {
+    padding: 80px 0;
+  }
+  .blog1 .blogText.wrapper h3,
+.blog1 .blogText.wrapper .btn2 {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .blog2 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog2 .blogImage img {
+    width: inherit;
+    height: 330px;
+  }
+  .blog2 .blogText.wrapper {
+    padding: 80px 0;
+  }
+  .blog2 .blogText.wrapper h3,
+.blog2 .blogText.wrapper .btn2 {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+@media (max-width: 680px) {
+  header {
+    background: url(../assets/headerMobile3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -120px center;
+  }
   .gallery {
     margin-bottom: 25px;
   }
@@ -832,74 +893,13 @@ footer .copyright {
     width: 100%;
   }
   .gallery ul .full img {
-    width: 100%;
+    width: inherit;
     height: 400px;
     -o-object-fit: fill;
        object-fit: fill;
   }
   .hide {
     display: none;
-  }
-  .blog .blogText.flexContainer {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-  .blog .blogImage {
-    width: 100%;
-  }
-  .blog .blogText.wrapper {
-    width: 90%;
-  }
-  .blog1 {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .blog1 .blogImage img {
-    width: 100%;
-    height: 280px;
-  }
-  .blog1 .blogText.wrapper {
-    padding: 80px 0;
-  }
-  .blog1 .blogText.wrapper h3,
-.blog1 .blogText.wrapper .btn2 {
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-  .blog2 {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .blog2 .blogImage img {
-    width: 100%;
-    height: 330px;
-  }
-  .blog2 .blogText.wrapper {
-    padding: 80px 0;
-  }
-  .blog2 .blogText.wrapper h3,
-.blog2 .blogText.wrapper .btn2 {
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-}
-@media (max-width: 680px) {
-  header {
-    background: url(../assets/headerMobile3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -120px center;
   }
 }
 /* Third Big Break Point: Landscape Phones and Down */
@@ -908,7 +908,6 @@ footer .copyright {
     background-position-x: -220px;
   }
   header h2 {
-    font-size: 1.8rem;
     line-height: 32px;
   }
   .galleryAndAbout {
@@ -929,7 +928,7 @@ footer .copyright {
     padding: 17px 27px;
   }
   .blog1 .blogImage img {
-    height: 165px;
+    height: 175px;
   }
   .blog1 .blogText.wrapper {
     padding: 40px 0;
@@ -1005,12 +1004,8 @@ footer .copyright {
   }
 }
 @media (max-width: 320px) {
-  header {
-    height: 90vh;
-  }
   header h2 {
-    font-size: 1.5rem;
-    line-height: 26px;
+    line-height: 30px;
     margin-top: 40px;
   }
   .galleryAndAbout p,
